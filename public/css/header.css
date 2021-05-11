@@ -1,0 +1,54 @@
+h1{
+	padding: 1.5em;
+	line-height: .5em;
+	font-weight: bolder;
+	font-size:1em;
+	background-color:var(--main-color);
+	border-top:2px solid black;
+}
+
+.header__nav{
+	background-color:var(--four-color);
+	text-decoration: none;
+	padding: .5em;
+	margin-top: -1em;
+	font-size: 90%;
+	border-top:2px solid black;
+
+	border-bottom:2px solid black;
+}
+
+.link__icon{
+	width: 2em;
+	height: 2em;
+}
+
+.header__nav-link{
+	color:var(--icon-color);
+	text-decoration: none;
+	margin-left: 1em;
+}
+.nav-link__info{
+	position: relative;
+	top:-.5em;
+}
+.home-link{
+	position: relative;
+	text-decoration: none;
+	color: black;  
+	animation-name: cartel;
+	animation-iteration-count: infinite;
+	animation-duration:3s;  
+	animation-direction: alternate;  
+	animation-timing-function:linear;
+	white-space:nowrap;
+}
+
+@keyframes cartel{
+	from{
+		left:-20%;
+	}
+	to{
+		left:2%;
+	}
+}

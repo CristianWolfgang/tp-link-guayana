@@ -1,0 +1,62 @@
+
+.products{
+    margin: 0 5vw;
+    text-align: left;
+}
+.product__link{
+	text-decoration: none;
+	color:black;
+    /*font-size: 120%;*/
+}
+.product{
+    margin-top: 1em;
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 2em;
+}
+.no-results{
+    margin-bottom: 60vh;
+    margin-top:5vh;
+    text-align: center;
+}
+.product__name{
+	color:var(--icon-color);
+}
+.product__image-container{
+	position: relative;
+}
+.new,.promo{
+	position: absolute;
+    top: 0;
+    left: 1em;
+    background-color: var(--new-promo-color);
+    padding: .2em;
+    color: white;
+    font-family: helvetica;
+    border-radius: .5em;
+}
+.promo{
+	left: 75%;
+}
+.promo:after{
+	border-top: 1em solid #ef5f5f;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    content: "";
+    height: 0;
+    left: 0.095em;
+    position: absolute;
+    top: 1.4em;
+}
+.product__img{
+    width: 100%;
+    position: relative;
+    border-radius: 1em;
+}
+.product__company{
+    font-weight: bold;
+}
+.product__price,
+.product__stock{
+	font-style: italic;
+}

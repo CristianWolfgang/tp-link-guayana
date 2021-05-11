@@ -1,0 +1,10 @@
+
+footer{
+	background-color: var(--header-bgcolor);
+	padding: 1em;
+	margin-top: 5em;
+}
+.footer__p{
+	color:white;
+	text-align: center;
+}

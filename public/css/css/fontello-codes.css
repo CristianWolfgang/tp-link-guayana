@@ -1,0 +1,5 @@
+
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-user:before { content: '\e802'; } /* '' */
+.icon-basket:before { content: '\e803'; } /* '' */

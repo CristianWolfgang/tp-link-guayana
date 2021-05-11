@@ -1,0 +1,39 @@
+
+#panel-btn,
+#ws-btn{
+	width: 3.5em;
+	height: 3.5em;
+	background-color:var(--icon-color);
+    position:fixed;
+    display: flex;
+    left: 80vw;
+    top:75vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 50%;
+}
+#ws-btn{
+	top: 87vh;
+    background-color:transparent;
+}
+.ws-img{
+	width: 4em;
+}
+#speak-btn{
+
+    height: 2.5em;
+    width: 2.5em;
+    position: absolute;
+    margin-left: 45%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: var(--icon-color);
+}
+#speak-btn >img{
+    width: 2em;
+    height: 2em;
+}

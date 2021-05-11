@@ -1,0 +1,1 @@
+<?php require 'controller/product_controller.php'; ?>
