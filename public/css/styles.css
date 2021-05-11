@@ -36,6 +36,16 @@ body{
 	font-display: fallback;
 
 }
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f4eee8de;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    padding: 45%;
+}
 #speak-box{
 
     position: absolute;
