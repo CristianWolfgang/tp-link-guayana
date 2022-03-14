@@ -16,10 +16,9 @@
 				
 
 		<?php
-			foreach ($arrCategories as $category) {
-				echo "<option value='". $category."'>". $category."s</option>";
+			foreach($arrCategories as $categorie){
+				echo "<option value='{$categorie}'>{$categorie}s</option>";
 			}
-
 		?>
 
 			</select>
@@ -41,8 +40,8 @@
 			<div class="logo-container">
 				<?php
 					
-					foreach ($modelLogo->getData("SELECT * FROM COMPANIES") as $logo) {
-						echo "<a href='company/". $logo["name"]."'><img class='company-logo'src='http://localhost/tp-link-guayana/public/images/company-logos/".$logo['image']. "' alt='". $logo['name']. "'></a>";	
+					foreach ($arrBrands as $brand) {
+						echo "<a href='company/". $brand["NAME"]."'><img class='company-logo'src='public/images/company-logos/".$brand['IMAGE']. "' alt='". $brand['NAME']. "'></a>";	
 					}
 				?>
 			</div>
@@ -74,7 +73,6 @@
 						
 						foreach ($product["about"] as $key) {
 							echo "<li>". $key.".</li>";
-						
 						}
 						
 						echo"

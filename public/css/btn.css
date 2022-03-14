@@ -32,6 +32,7 @@
     align-items: center;
     border: 0;
     background-color: var(--icon-color);
+    cursor: pointer;
 }
 #speak-btn >img{
     width: 2em;

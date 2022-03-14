@@ -64,7 +64,6 @@ body{
 
 @media only screen and (min-width: 375px) {
 	.header__nav{
-		padding-left: 1.5em;
 		font-size: 100%;
 	}
 	.product__link hr{
@@ -86,7 +85,6 @@ body{
 
 @media only screen and (min-width: 425px){
 	.header__nav{
-		padding-left: 1.5em;
 		font-size: 115%;
 	}
 	@keyframes cartel{
@@ -127,15 +125,12 @@ body{
 		border-top:3px solid black;
 	}
 	.header__nav{
-		padding-left: 1em;
 		font-size: 150%;
 		border-top:3px solid black;
 		border-bottom:3px solid black;
 
 	}
-	.header__nav >*{
-		margin-left: 3em;
-	}
+
 	@keyframes cartel{
 		from{
 			left:-10%;
@@ -144,10 +139,9 @@ body{
 			left:35%;
 		}
 	}
-
-    .products{
-        margin:0 21vw;
-    }
+	.products{
+		margin:0 1vw;
+	}
     .product{
         padding: 2em;        
     }
@@ -157,7 +151,13 @@ body{
     .promo{
         left: 80%;
     }
-
+	.navbar__search-form{
+		display: inline;
+	}
+	#speak-btn{
+		display: inline-flex;
+		margin-left:1%;
+	}
     #panel-btn,
     #ws-btn{
         left:90vw;
@@ -178,12 +178,12 @@ body{
 }
 @media only screen and (min-width: 1024px){
 
-	.header__nav{
-		padding-left: 4em;
-		font-size: 160%;
+	#header__nav-select{
+	
+		height: 3.5em;
 	}
-	.header__nav > *{
-		margin-left:4em;
+	.header__nav{
+		font-size: 160%;
 	}
 	@keyframes cartel{
 		from{
@@ -192,9 +192,6 @@ body{
 		to{
 			left: 52%;
 		}
-	}
-	.products{
-		margin:0 20vw;
 	}
 
     .product__name{
@@ -242,6 +239,7 @@ body{
 }
 }
 @media only screen and (min-width: 1440px) {
+	
 	body{
 		background-size: 100% 100%;
 	}
@@ -249,19 +247,18 @@ body{
 		font-size: 1.9em;
 	}
 	.header__nav{
-		padding-left: 6em;
 		font-size: 200%;
 	}
 	    .products{
-        margin:0 20vw;
         display: flex;
         flex-wrap: wrap;
     }
     .product{
-        width: 100%;
         height: 20em;
     }
-    
+    .search__form-input{
+		width: 65%;
+	}
     .product__image-container{
         width: 45%;
         display: block;
@@ -323,12 +320,13 @@ body{
 			left: 65%;
 		}
 	}
+	
+#header__nav-select{
+	
+    height: 5em;
+}
 	.header__nav{
 		font-size: 260%;
-		padding-left: 6em;
-	}
-	.header__nav >*{
-		margin-left: 8em;
 	}
 	.product{
 		height: 27em;

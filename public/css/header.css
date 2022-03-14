@@ -8,6 +8,11 @@ h1{
 }
 
 .header__nav{
+	
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
 	background-color:var(--four-color);
 	text-decoration: none;
 	padding: .5em;
@@ -26,11 +31,15 @@ h1{
 .header__nav-link{
 	color:var(--icon-color);
 	text-decoration: none;
-	margin-left: 1em;
 }
 .nav-link__info{
 	position: relative;
 	top:-.5em;
+	
+}
+#header__nav-select{
+	
+    height: 2em;
 }
 .home-link{
 	position: relative;

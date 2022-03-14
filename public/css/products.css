@@ -1,18 +1,21 @@
 
 .products{
-    margin: 0 5vw;
+    margin: 0 3vw;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .product__link{
 	text-decoration: none;
 	color:black;
-    /*font-size: 120%;*/
 }
 .product{
     margin-top: 1em;
     background-color: #eee;
     padding: 1em;
     border-radius: 2em;
+    width: 49%;
 }
 .no-results{
     margin-bottom: 60vh;

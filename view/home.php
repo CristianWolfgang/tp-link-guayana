@@ -15,10 +15,9 @@
 				
 
 		<?php
-			foreach ($arrCategories as $category) {
-				echo "<option value='". $category."'>". $category."s</option>";
+			foreach($arrCategories as $categorie){
+				echo "<option value='{$categorie}'>{$categorie}s</option>";
 			}
-
 		?>
 
 			</select>
@@ -40,8 +39,8 @@
 			<div class="logo-container">
 				<?php
 					
-					foreach ($modelLogo->getData("SELECT * FROM COMPANIES") as $logo) {
-						echo "<a href='company/". $logo["name"]."'><img class='company-logo'src='public/images/company-logos/".$logo['image']. "' alt='". $logo['name']. "'></a>";	
+					foreach ($arrBrands as $brand) {
+						echo "<a href='company/". $brand["NAME"]."'><img class='company-logo'src='public/images/company-logos/".$brand['IMAGE']. "' alt='". $brand['NAME']. "'></a>";	
 					}
 				?>
 			</div>
@@ -68,7 +67,7 @@
 				</figure>
 				
 			<?php
-			foreach ($modelProducts->getData("SELECT * FROM PRODUCTS") as $product) {
+			foreach ($arrProducts as $product) {
 				echo "
 				<figure class='product'>
 					<a href='product/".$product["id"]."' class='product__link'>
