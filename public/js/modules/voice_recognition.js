@@ -1,3 +1,4 @@
+import rootPath from "./root_path.js";
 const d = document;
 export default function voiceRecon(){
 	if('webkitSpeechRecognition' in window){
@@ -12,7 +13,7 @@ export default function voiceRecon(){
 								<br>
     							<h3>Escuchando...</h3>
     							<h3 id='result'></h3>`;
-			$speakBtn.innerHTML=`<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2Fp1em%2FMusic%2Fmicrophone1600.png&f=1&nofb=1" alt="">`;
+			$speakBtn.innerHTML=`<img src="${rootPath}/public/images/microphone.png"b=1" alt="">`;
 			d.body.insertAdjacentElement("afterbegin",$speakBox);
 			d.querySelector(".navbar__search-form").insertAdjacentElement("afterend",$speakBtn);
 
@@ -39,7 +40,7 @@ export default function voiceRecon(){
 					$speakBox.querySelector("#result").textContent=myResult;
 				})
 				setTimeout(()=>{
-						location.href="http://localhost/tp-link-guayana/search?q="+myResult;
+						location.href="http://localhost/tp-link-guayana/search.php?search="+myResult;
 				},3500);
 			}
 			recon.onerror=e=>{

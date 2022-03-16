@@ -18,7 +18,10 @@
     background-color:transparent;
 }
 .ws-img{
-	width: 4em;
+	width: inherit;
+}
+.search__form-submit{
+    cursor: pointer;
 }
 #speak-btn{
 
@@ -35,6 +38,7 @@
     cursor: pointer;
 }
 #speak-btn >img{
-    width: 2em;
-    height: 2em;
+    padding: .5em;
+    width: inherit;
+    height: inherit;
 }
